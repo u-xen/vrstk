@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+header{
+    padding: 80px;
+    text-align: center;
+    /* background: #1abc9c; */
+    background-image: url("image/pexels-kat-smith-567985.jpg");
+    color: white;
+    margin: 0px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* логотип */
+.xmas{
+    float: left;
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    /* background-color: blue; */
+    margin-left: 10px;
+}
+.bottomtree{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 12px solid green;
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 10px;
+    /* rotate: 180deg; */
+}
+.middletree{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid green;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 13px;
+    /* rotate: 180deg; */
+}
+.toptree{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid green;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 16px;
+    /* rotate: 180deg; */
+}
+.beauty1{
+    background-color: yellow;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    margin-top:8px;
+    margin-left: 21px;
+    position: absolute;
+}
+.beauty2{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:20px;
+    margin-left: 16px;
+    position: absolute;
+}
+.beauty3{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:22px;
+    margin-left: 18px;
+    position: absolute;
+}
+.beauty4{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:24px;
+    margin-left: 20px;
+    position: absolute;
+}
+.beauty5{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:26px;
+    margin-left: 22px;
+    position: absolute;
+}
+.beauty6{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:28px;
+    margin-left: 24px;
+    position: absolute;
+}
+.beauty7{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:30px;
+    margin-left: 26px;
+    position: absolute;
+}
+.beauty8{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:32px;
+    margin-left: 28px;
+    position: absolute;
+}
+.beauty9{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:34px;
+    margin-left: 30px;
+    position: absolute;
+}
+.bottomtree:hover~.beauty1{
+    background-color: white;
+
+}
+.bottomtree:hover~.beauty2{
+    background-color: greenyellow;
+}
+.bottomtree:hover~.beauty3{
+    background-color: red;
+}
+.bottomtree:hover~.beauty4{
+    background-color: blue;
+}
+.bottomtree:hover~.beauty5{
+    background-color: greenyellow;
+}
+.bottomtree:hover~.beauty6{
+    background-color: red;
+}
+.bottomtree:hover~.beauty7{
+    background-color: blue;
+}
+.bottomtree:hover~.beauty8{
+    background-color: greenyellow;
+}
+.bottomtree:hover~.beauty9{
+    background-color: red;
+}
+
+
+
+
+/*главная часть */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+}
+
+
+
+body > *{
+    display: block;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+}
+
+.task {
+    margin: 40px;
+}
+
+.flex-container {
+	height: 400px;
+    width: 400px;
+    display: flex; 
+	flex-direction: row;  
+	justify-content: space-between;
+    align-items: center; 
+}
+
+.flex-item {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url('image/boy1.png');
+    background-size: cover;
+    transition: 1s;    
+    text-align: center; 
+}
+
+.flex-item:hover::before {    
+    content: 'Это мяч?...';
+    font-size: 2em;   
+}
+
+.flex-item:hover {
+    height: 300px;
+    margin: auto;
+    width: 300px;
+    background: url('image/boy2.png');
+    background-size: cover;
+    transition: 1s;
+}
+
+.flex-item:hover::after {
+    content: url('image/boy7.png');;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    transition-duration: 2s;
+}
+
+.flex-item:active::before {    
+    content: 'Это кирпич!';
+    font-size: 2em;
+    text-align: center;
+    transition: 1s;
+    opacity: 1;    
+}
+
+.flex-item:active:hover {
+    margin: auto;
+    background: url('image/boy3.png');
+    background-size: cover;
+    transition: 1s;  
+}
+
+.flex-item::after:active:hover {
+    content: url('image/boy7.png');;    
+    margin: auto;
+    background-size: cover;
+    transform: translate(35px, -35px) rotate(360deg);
+}
+
+

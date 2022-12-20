@@ -1,0 +1,563 @@
+/* .navigate{
+    background-color: aqua;
+    margin: 0;
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+    display: block;
+} */
+* {
+    box-sizing: border-box;
+}
+header{
+    padding: 80px;
+    text-align: center;
+    /* background: #1abc9c; */
+    background-image: url("image/pexels-kat-smith-567985.jpg");
+    color: white;
+    margin: 0px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* логотип */
+.xmas{
+    float: left;
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    /* background-color: blue; */
+    margin-left: 10px;
+}
+.bottomtree{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 12px solid green;
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 10px;
+    /* rotate: 180deg; */
+}
+.middletree{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid green;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 13px;
+    /* rotate: 180deg; */
+}
+.toptree{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid green;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 16px;
+    /* rotate: 180deg; */
+}
+.beauty1{
+    background-color: yellow;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    margin-top:8px;
+    margin-left: 21px;
+    position: absolute;
+}
+.beauty2{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:20px;
+    margin-left: 16px;
+    position: absolute;
+}
+.beauty3{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:22px;
+    margin-left: 18px;
+    position: absolute;
+}
+.beauty4{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:24px;
+    margin-left: 20px;
+    position: absolute;
+}
+.beauty5{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:26px;
+    margin-left: 22px;
+    position: absolute;
+}
+.beauty6{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:28px;
+    margin-left: 24px;
+    position: absolute;
+}
+.beauty7{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:30px;
+    margin-left: 26px;
+    position: absolute;
+}
+.beauty8{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:32px;
+    margin-left: 28px;
+    position: absolute;
+}
+.beauty9{
+    background-color: yellow;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    margin-top:34px;
+    margin-left: 30px;
+    position: absolute;
+}
+.bottomtree:hover~.beauty1{
+    background-color: white;
+
+}
+.bottomtree:hover~.beauty2{
+    background-color: greenyellow;
+}
+.bottomtree:hover~.beauty3{
+    background-color: red;
+}
+.bottomtree:hover~.beauty4{
+    background-color: blue;
+}
+.bottomtree:hover~.beauty5{
+    background-color: greenyellow;
+}
+.bottomtree:hover~.beauty6{
+    background-color: red;
+}
+.bottomtree:hover~.beauty7{
+    background-color: blue;
+}
+.bottomtree:hover~.beauty8{
+    background-color: greenyellow;
+}
+.bottomtree:hover~.beauty9{
+    background-color: red;
+}
+
+
+
+
+/*главная часть */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+}
+
+/* подложка фото елки */
+.fakeimg {
+    background-color: #aaa;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+/* сама елка */
+.el{
+    width: 100%;
+    height: auto;
+}
+/* ссылка сюда */
+.biga{
+    /* font-style: normal; */
+    color:palevioletred;
+    text-decoration: none;
+}
+.biga:hover{
+    /* font-style: normal; */
+    color: pink;
+    
+    text-decoration: none;
+}
+/* карточки лабораторных */
+/* .works{
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+/* .cc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 0 25%;
+  min-width: 400px;
+  max-width: 100%;
+} */
+.card {
+    display: inline-block;
+    /* flex-wrap: wrap; */
+
+    /* float: left; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* background-color: aqua; */
+    width: 24%;
+    /* height: 200px; */
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    /* margin-right: 10px; */
+    margin-top: 20px;
+    padding-top: 20px;
+    /* justify-content: center; */
+
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+
+    
+}
+.container>p{
+    height: 30px;
+    font-size:medium;
+    color: #333;
+}
+
+
+
+
+
+
+
+/* подложка фото кота */
+.bord {
+    background-color: #aaa;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.fakeimg:hover{
+    background-image: url("image/pexels-kat-smith-567985.jpg");
+
+}
+.bord:last-child{
+    margin-top: 20px;
+}
+/* сам котя */
+.kus{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+.email{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* nav > a {
+    display: block;
+    width: 5em;
+    padding:10px;
+    margin: 0 5px;
+    background-color: #f4f4f4;
+    border: 1px dashed #333;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+main{
+    margin-top: 100px;
+}
+a:hover{
+    background-color: #333;
+    color: #f4f4f4;
+} */
+
+
+.kitten{
+    display: block;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    /* border-radius: 100%; */
+    background-color: purple;
+    padding: 0px;
+    position: relative;
+}
+.head{
+    background-color: #696969;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top:85px;
+    margin-left: 120px;
+    position: absolute;
+    /* border: 1px solid white; */
+    
+}
+.fatbody{
+    border-radius: 100%;
+    width: 110px;
+    height: 80px;
+    margin-top:70px;
+    margin-left: 45px;
+    /* background-color: grey; */
+    background: radial-gradient(circle farthest-side at 46px 10px, #ffffff 10% , #D3D3D3 35%	, grey 75%);
+    position: absolute;
+    /* border-color: white;
+    border: 1px; */
+}
+.tail{
+    border-radius: 100%;
+    width: 20px;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: grey;
+    background: radial-gradient( 75px 75px at top, #ffffff , grey 20%);
+
+    position: absolute;
+    rotate: -15deg;
+
+}
+.tail:hover{
+    rotate: -5deg;
+    /* skew: (0, -5deg); */
+}
+.paw1 {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 40px solid #808080;
+    position: absolute;
+    margin-top: 127px;
+    margin-left: 50px;
+    rotate: 180deg;
+  }
+  .paw2 {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 40px solid #696969;
+    position: absolute;
+    margin-top: 127px;
+    margin-left: 63px;
+    rotate: 180deg;
+  }
+  .paw3 {
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 40px solid grey;
+    position: absolute;
+    margin-top: 129px;
+    margin-left: 105px;
+    rotate: 163deg;
+  }
+  .paw4 {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 40px solid #696969;
+    position: absolute;
+    margin-top: 127px;
+    margin-left: 115px;
+    rotate: 163deg;
+  }
+  .left-eye{
+    position: absolute;
+    width:10px;
+    height: 4px;
+    margin-top: 104px;
+    margin-left: 135px;
+    background-color: greenyellow;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  .right-eye{
+    position: absolute;
+    width:10px;
+    height: 4px;
+    margin-top: 104px;
+    margin-left: 155px;
+    background-color: greenyellow;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  .nose{
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 4px solid pink;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 147px;
+    rotate: 180deg;
+  }
+  .left-ear{
+    position: absolute;
+    width:16px;
+    height: 10px;
+    margin-top: 84px;
+    margin-left: 115px;
+    background-color: #696969;
+    rotate: -45deg;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  .right-ear{
+    position: absolute;
+    width:16px;
+    height: 10px;
+    margin-top: 80px;
+    margin-left: 155px;
+    background-color: #696969;
+    rotate: 35deg;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  .pupil-left{
+    position: absolute;
+    width:2px;
+    height: 5px;
+    margin-top: 104px;
+    margin-left: 139px;
+    background-color: #000000;
+    border-radius: 100%;
+  }
+  .pupil-right{
+    position: absolute;
+    width:2px;
+    height: 5px;
+    margin-top: 104px;
+    margin-left: 159px;
+    background-color: #000000;
+    border-radius: 100%;
+  }
+  .nose:hover~.pupil-left{
+    width:3px;
+    height: 3px;
+    margin-top: 106px;
+    margin-left: 141px;
+  }
+  .nose:hover~.pupil-right{
+    width:3px;
+    height: 3px;
+    margin-top: 106px;
+    margin-left: 155px;
+  }
+  .whisker-left{
+    position: absolute;
+    width:5px;
+    height: 1px;
+    margin-top: 116px;
+    margin-left: 145px;
+    background-color: #000000;
+    rotate: -45deg;
+    border: 0px;
+  }
+  .whisker-right{
+    position: absolute;
+    width:5px;
+    height: 1px;
+    margin-top: 116px;
+    margin-left: 150px;
+    background-color: #000000;
+    rotate: 45deg;
+    border: 0px;
+  }
+
