@@ -8,6 +8,8 @@
 } */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 header{
     padding: 80px;
@@ -22,15 +24,36 @@ header h1 {
     font-size: 40px;
 }
 
+
+.nav {
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: #333;
+    align-items: center;
+    background-color: #333;
+  }   
+  .nav_items {
+    display: flex;
+  }
+  
+  .nav_items-right {
+    margin-left:auto;
+  }
+  
+  .nav_link-toggle {
+    display: none;
+  }
+
 body {
     font-family: Arial;
     margin: 0;
 }
 
-nav{
+/* nav{
     overflow: hidden;
     background-color: #333;
-}
+} */
 
 nav a {
     float: left;
@@ -327,22 +350,40 @@ nav a:hover {
     color: #000000;
 }
 
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {   
-        flex-direction: column;
+@media only screen and (max-width: 768px) {
+    .nav_items,
+    .nav {
+      flex-direction: column;
     }
-}
+      
+    .nav_items {
+        display:none;
+      }
+        
+    .nav_items-right {
+        margin-left:0;
+      }
+        
+    .nav_toggle-show {
+        display: flex;
+      }
+        
+    .nav_link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+      } 
+  }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .navbar a {
         float: none;
         width: 100%;
     }
 }
+
 
 /* nav > a {
     display: block;
@@ -560,4 +601,3 @@ a:hover{
     rotate: 45deg;
     border: 0px;
   }
-
