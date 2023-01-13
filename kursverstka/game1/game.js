@@ -5,6 +5,8 @@ dragElement(document.getElementById(("m4")));
 dragElement(document.getElementById(("m5")));
 
 
+const userResult = JSON.parse(localStorage.getItem(`${localStorage.length}`))
+
 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 var win1=0, win2=0, win3=0, win4=0;
 var wrong = 0;
@@ -336,6 +338,8 @@ function dragElement(elmnt) {
         a5.style.hidden = false;
         a5.style.display = "block";
       }
+      userResult.level1 = final
+      localStorage.setItem(localStorage.length, JSON.stringify(userResult))
       // let again =confirm(`МОЛОДЕЦ! Игра окончена, вы заработали ${final} очков `)
       //   if(again==true){
       //       location.reload();
