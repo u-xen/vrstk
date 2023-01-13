@@ -5,6 +5,8 @@
 // dragElement(document.getElementById(("m5")));
 
 
+const userResult = JSON.parse(localStorage.getItem(`${localStorage.length}`))
+
 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
 var win1=0, win2=0, win3=0, win4=0;
@@ -89,6 +91,8 @@ function change(c){
             let a = document.getElementById('myModal');
             a.style.hidden = false;
             a.style.display = "block";
+            userResult.level3 = 100
+            localStorage.setItem(localStorage.length, JSON.stringify(userResult))
         //     let again =confirm(`Игра окончена, ты лучше всех!!!!`)
         // if(again==true){
         //     // a=20

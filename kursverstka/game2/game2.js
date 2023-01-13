@@ -4,6 +4,8 @@ dragElement(document.getElementById(("m3")));
 dragElement(document.getElementById(("m4")));
 dragElement(document.getElementById(("m5")));
 
+const userResult = JSON.parse(localStorage.getItem(`${localStorage.length}`))
+
 
 let timer = document.createElement('input') //таймер
 timer.className = 'inp'
@@ -80,6 +82,8 @@ function time(){
         a5.style.hidden = false;
         a5.style.display = "block";
         }
+        userResult.level2 = final
+        localStorage.setItem(localStorage.length, JSON.stringify(userResult))
         // let again =confirm(`Игра окончена, вы заработали ${final} очков \n Хотите повторить игру??`)
         // if(again==true){
         //     a=20
